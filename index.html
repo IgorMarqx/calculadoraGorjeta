@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <main oninput="gorjeta()" class="container">
+        <div class="titulo">
+            <h1>Calculadora de Gorjeta</h1>
+        </div>
+
+        <hr class="line">
+
+        <section>
+            <div class="conta">
+                <label for="">Conta</label>
+                <input type="number" id="valorConta" placeholder="Informe o valor da conta">
+            </div>
+            
+            <div class="gorjeta">
+                <label for="tipInput">Insira sua gorjeta</label>
+                <span id="Percent-gorjeta">0</span>
+            </div>
+
+            <div>
+                <input class="range" type="range" value="0" id="tipInput">
+            </div>
+              
+            <div id="line" class="total">
+                <span>Gorjeta</span>
+                <span id="tipValue">0</span>
+            </div>
+
+            <hr class="line">
+
+            <div class="total">
+                <span>Total</span>
+                <span id="totalGorjeta">0</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="line-2">
+                <div class="conta">
+                    <span>Dividir por pessoa</span>
+                    <span id="splitValue">0</span>
+                </div>
+                <input class="range" type="range" id="splitInput" min="1" max="10" value="0">
+            </div>
+
+            <div class="conta">
+                <span>Fatura total da conta</span>
+                <span id="total">0</span>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
